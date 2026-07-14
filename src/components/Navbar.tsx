@@ -11,7 +11,7 @@ const navLinks = [
   { name: "Education", href: "#education" },
   { name: "Portfolio", href: "#portfolio" },
   { name: "About", href: "#about" },
-  { name: "Contact", href: "#contact" },
+  { name: "Contact", href: "#about" },
 ];
 
 export default function Navbar() {
@@ -46,9 +46,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           <a href="#home" className="flex items-center">
             <img
-              src="/logo.jpeg"
+              src="/IMG_4544.PNG"
               alt="NSB TECH"
-              className="h-12 md:h-16 lg:h-20 w-auto"
+              className="h-32 md:h-36 lg:h-40 w-auto"
             />
           </a>
 
@@ -62,12 +62,6 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="ml-4 px-5 py-2.5 rounded-full bg-gradient-to-r from-primary-blue to-primary-light text-white text-sm font-semibold hover:shadow-lg hover:shadow-primary-blue/30 hover:-translate-y-0.5 transition-all duration-300"
-            >
-              Get A Free Quote
-            </a>
           </div>
 
           <button
@@ -103,16 +97,6 @@ export default function Navbar() {
                   {link.name}
                 </motion.a>
               ))}
-              <motion.a
-                href="#contact"
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.3 }}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="block mt-4 px-6 py-3 text-center rounded-full bg-gradient-to-r from-primary-blue to-primary-light text-white font-semibold hover:shadow-lg transition-all duration-300"
-              >
-                Get A Free Quote
-              </motion.a>
             </div>
           </motion.div>
         )}

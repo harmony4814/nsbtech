@@ -64,14 +64,14 @@ export default function CallToAction() {
             className="mt-10 flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href="#contact"
+              href="#about"
               className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-gradient-to-r from-primary-light to-accent-cyan text-primary-navy font-semibold text-sm sm:text-base hover:shadow-xl hover:shadow-primary-light/30 hover:-translate-y-0.5 transition-all duration-300"
             >
               Get Started
               <Sparkles size={18} />
             </a>
             <a
-              href="#contact"
+              href="#about"
               className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full border-2 border-white/30 text-white font-semibold text-sm sm:text-base hover:bg-white/10 hover:border-white/50 transition-all duration-300"
             >
               <Calendar size={18} />

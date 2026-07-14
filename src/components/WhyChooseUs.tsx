@@ -95,7 +95,7 @@ export default function WhyChooseUs() {
               <div className="absolute inset-4 bg-gradient-to-br from-primary-blue/20 to-primary-light/20 rounded-2xl" />
               <div className="absolute inset-8 bg-gradient-to-br from-primary-blue/30 to-primary-light/30 rounded-xl flex items-center justify-center">
                 <div className="text-center">
-                  <div className="text-6xl font-bold text-white mb-2">10+</div>
+                  <div className="text-6xl font-bold text-white mb-2">4+</div>
                   <div className="text-white/80 text-lg">Years Experience</div>
                 </div>
               </div>

@@ -1,6 +1,34 @@
 "use client";
 
-import { Mail, Phone, MapPin, Globe, MessageCircle, BookOpen, Play } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+
+const InstagramIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+  </svg>
+);
+
+const FacebookIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+  </svg>
+);
+
+const TikTokIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+  </svg>
+);
+
+const LinkedInIcon = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+    <rect width="4" height="12" x="2" y="9" />
+    <circle cx="4" cy="4" r="2" />
+  </svg>
+);
 
 const footerLinks = {
   company: {
@@ -30,10 +58,10 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Globe, href: "#", label: "LinkedIn" },
-  { icon: MessageCircle, href: "#", label: "Twitter" },
-  { icon: BookOpen, href: "#", label: "GitHub" },
-  { icon: Play, href: "#", label: "YouTube" },
+  { icon: InstagramIcon, href: "https://www.instagram.com/nsb__tech?igsh=OTdmMTFmNGZtemZy&utm_source=qr", label: "Instagram" },
+  { icon: FacebookIcon, href: "https://www.facebook.com/share/1Hjhpd1kzD/?mibextid=wwXIfr", label: "Facebook" },
+  { icon: TikTokIcon, href: "https://www.tiktok.com/@nsb_tech?_r=1&_t=ZS-981wj07Ku0W", label: "TikTok" },
+  { icon: LinkedInIcon, href: "#", label: "LinkedIn" },
 ];
 
 export default function Footer() {
@@ -72,7 +100,7 @@ export default function Footer() {
               </a>
               <div className="flex items-center gap-3 text-white/60 text-sm">
                 <MapPin size={16} />
-                Ibadan, Nigeria
+                No 48 Ishebo Street, Ibadan
               </div>
             </div>
           </div>

@@ -14,7 +14,7 @@ import { useInView } from "@/hooks/useInView";
 const infoItems = [
   { icon: Phone, label: "Phone", value: "+234 816 262 0628", href: "tel:+2348162620628" },
   { icon: MessageCircle, label: "WhatsApp", value: "+234 701 597 5922", href: "https://wa.me/2347015975922" },
-  { icon: MapPin, label: "Address", value: "123 Street New York", href: "#" },
+  { icon: MapPin, label: "Address", value: "No 48 Ishebo Street, Ibadan", href: "#" },
   { icon: Globe, label: "Nationality", value: "Nigerian", href: "#" },
   { icon: Mail, label: "Email", value: "nsbtech25@gmail.com", href: "mailto:nsbtech25@gmail.com" },
   { icon: Briefcase, label: "Freelancer", value: "Available", href: "#" },
@@ -89,29 +89,32 @@ export default function About() {
             </motion.p>
 
             <div className="grid sm:grid-cols-2 gap-4">
-              {infoItems.map((item, i) => (
-                <motion.a
-                  key={item.label}
-                  href={item.href}
-                  custom={i}
-                  variants={itemVariants}
-                  initial="hidden"
-                  animate={isInView ? "visible" : "hidden"}
-                  className="flex items-center gap-3 p-3 rounded-xl bg-white card-hover group"
-                >
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary-blue to-primary-light/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
-                    <item.icon className="text-primary-blue" size={18} />
-                  </div>
-                  <div>
-                    <p className="text-xs text-text-muted uppercase tracking-wider">
-                      {item.label}
-                    </p>
-                    <p className="text-sm font-semibold text-primary-navy">
-                      {item.value}
-                    </p>
-                  </div>
-                </motion.a>
-              ))}
+              {infoItems.map((item, i) => {
+                const Tag = item.href === "#" ? motion.div : motion.a;
+                return (
+                  <Tag
+                    key={item.label}
+                    {...(item.href === "#" ? {} : { href: item.href })}
+                    custom={i}
+                    variants={itemVariants}
+                    initial="hidden"
+                    animate={isInView ? "visible" : "hidden"}
+                    className="flex items-center gap-3 p-3 rounded-xl bg-white card-hover group"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary-blue to-primary-light/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
+                      <item.icon className="text-primary-blue" size={18} />
+                    </div>
+                    <div>
+                      <p className="text-xs text-text-muted uppercase tracking-wider">
+                        {item.label}
+                      </p>
+                      <p className="text-sm font-semibold text-primary-navy">
+                        {item.value}
+                      </p>
+                    </div>
+                  </Tag>
+                );
+              })}
             </div>
           </div>
         </div>
