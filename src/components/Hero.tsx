@@ -40,14 +40,14 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden bg-white"
+      className="relative min-h-[auto] lg:min-h-screen flex items-center overflow-hidden bg-white"
     >
       <div className="absolute inset-0 bg-hero-glow opacity-60" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-blue/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-light/5 rounded-full blur-3xl" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 md:pt-32 md:pb-24">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-8 sm:pb-16 md:pt-32 md:pb-24">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -108,7 +108,7 @@ export default function Hero() {
                 ))}
               </div>
               <div className="text-left">
-                <p className="font-semibold text-primary-navy">500+</p>
+                <p className="font-semibold text-primary-navy">50+</p>
                 <p className="text-sm">Projects Delivered</p>
               </div>
             </motion.div>
@@ -118,81 +118,83 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative hidden lg:block"
+            className="relative mt-8 lg:mt-0"
           >
-            <div className="relative w-full aspect-square max-w-lg mx-auto">
-              <motion.div
-                custom={0}
-                variants={floatingIconVariants}
-                animate="animate"
-                className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-32 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-4"
-              >
-                <Monitor className="text-primary-blue" size={60} />
-              </motion.div>
+            <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto scale-[0.65] sm:scale-75 md:scale-[0.85] lg:scale-100 origin-top">
+              <div className="relative aspect-square">
+                <motion.div
+                  custom={0}
+                  variants={floatingIconVariants}
+                  animate="animate"
+                  className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-32 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-4"
+                >
+                  <Monitor className="text-primary-blue" size={60} />
+                </motion.div>
 
-              <motion.div
-                custom={1}
-                variants={floatingIconVariants}
-                animate="animate"
-                className="absolute top-1/4 right-0 w-40 h-28 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-3"
-              >
-                <LayoutDashboard className="text-accent-cyan" size={48} />
-              </motion.div>
+                <motion.div
+                  custom={1}
+                  variants={floatingIconVariants}
+                  animate="animate"
+                  className="absolute top-1/4 right-0 w-40 h-28 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-3"
+                >
+                  <LayoutDashboard className="text-accent-cyan" size={48} />
+                </motion.div>
 
-              <motion.div
-                custom={2}
-                variants={floatingIconVariants}
-                animate="animate"
-                className="absolute top-1/2 left-0 w-36 h-28 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-3"
-              >
-                <Code2 className="text-primary-blue" size={48} />
-              </motion.div>
+                <motion.div
+                  custom={2}
+                  variants={floatingIconVariants}
+                  animate="animate"
+                  className="absolute top-1/2 left-0 w-36 h-28 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-3"
+                >
+                  <Code2 className="text-primary-blue" size={48} />
+                </motion.div>
 
-              <motion.div
-                custom={3}
-                variants={floatingIconVariants}
-                animate="animate"
-                className="absolute bottom-1/4 right-0 w-36 h-28 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-3"
-              >
-                <Cloud className="text-primary-light" size={48} />
-              </motion.div>
+                <motion.div
+                  custom={3}
+                  variants={floatingIconVariants}
+                  animate="animate"
+                  className="absolute bottom-1/4 right-0 w-36 h-28 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-3"
+                >
+                  <Cloud className="text-primary-light" size={48} />
+                </motion.div>
 
-              <motion.div
-                custom={4}
-                variants={floatingIconVariants}
-                animate="animate"
-                className="absolute top-[60%] left-[10%] w-32 h-24 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-3"
-              >
-                <BarChart3 className="text-accent-orange" size={40} />
-              </motion.div>
+                <motion.div
+                  custom={4}
+                  variants={floatingIconVariants}
+                  animate="animate"
+                  className="absolute top-[60%] left-[10%] w-32 h-24 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-3"
+                >
+                  <BarChart3 className="text-accent-orange" size={40} />
+                </motion.div>
 
-              <motion.div
-                custom={5}
-                variants={floatingIconVariants}
-                animate="animate"
-                className="absolute bottom-0 left-1/3 w-32 h-24 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-3"
-              >
-                <PenTool className="text-primary-blue" size={40} />
-              </motion.div>
+                <motion.div
+                  custom={5}
+                  variants={floatingIconVariants}
+                  animate="animate"
+                  className="absolute bottom-0 left-1/3 w-32 h-24 bg-white rounded-2xl shadow-2xl shadow-primary-blue/20 border border-gray-100 flex items-center justify-center p-3"
+                >
+                  <PenTool className="text-primary-blue" size={40} />
+                </motion.div>
 
-              <motion.div
-                custom={6}
-                variants={floatingIconVariants}
-                animate="animate"
-                className="absolute top-[15%] left-[8%] w-28 h-20 bg-white rounded-2xl shadow-xl shadow-primary-blue/10 border border-gray-100 flex items-center justify-center p-2"
-              >
-                <Users className="text-accent-cyan" size={36} />
-              </motion.div>
+                <motion.div
+                  custom={6}
+                  variants={floatingIconVariants}
+                  animate="animate"
+                  className="absolute top-[15%] left-[8%] w-28 h-20 bg-white rounded-2xl shadow-xl shadow-primary-blue/10 border border-gray-100 flex items-center justify-center p-2"
+                >
+                  <Users className="text-accent-cyan" size={36} />
+                </motion.div>
 
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary-blue/10 to-primary-light/10 blur-xl" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-primary-blue/10 to-primary-light/10 blur-xl" />
+                </div>
               </div>
             </div>
           </motion.div>
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background-alt to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-32 bg-gradient-to-t from-background-alt to-transparent" />
     </section>
   );
 }
