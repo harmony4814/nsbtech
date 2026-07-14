@@ -54,6 +54,19 @@ const skills = [
     color: "from-cyan-400 to-blue-500",
     level: 80,
   },
+  {
+    name: "Node.js",
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" className="w-10 h-10">
+        <path fill="#3C873A" d="M24 4L6 14v20l18 10 18-10V14z" />
+        <path fill="#fff" d="M24 8l-12 7v14l12 7 12-7V15z" />
+        <path fill="#3C873A" d="M24 12l-8 5v10l8 5 8-5V17z" />
+        <path fill="#fff" d="M21 20h2v8h-2zm4-1h2v9h-2z" />
+      </svg>
+    ),
+    color: "from-green-500 to-green-600",
+    level: 75,
+  },
 ];
 
 const cardVariants = {
@@ -86,7 +99,7 @@ export default function Skills() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8 max-w-5xl mx-auto">
           {skills.map((skill, i) => (
             <motion.div
               key={skill.name}
