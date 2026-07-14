@@ -46,7 +46,7 @@ export default function Hero() {
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-blue/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-primary-light/5 rounded-full blur-3xl" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-6 sm:pb-16 md:pt-32 md:pb-24">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 pb-4 sm:pb-16 md:pt-32 md:pb-24">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <motion.div
             variants={containerVariants}
@@ -118,10 +118,10 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative mt-6 lg:mt-0"
+            className="relative mt-2 lg:mt-0"
           >
-            <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto h-[200px] sm:h-[280px] md:h-[360px] lg:h-auto overflow-hidden">
-              <div className="relative w-full lg:aspect-square scale-[0.65] sm:scale-75 md:scale-[0.85] lg:scale-100 origin-top">
+            <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto h-[220px] sm:h-[290px] md:h-[380px] lg:h-auto overflow-hidden">
+              <div className="relative w-full aspect-square scale-[0.65] sm:scale-75 md:scale-[0.85] lg:scale-100 origin-top">
                 <motion.div
                   custom={0}
                   variants={floatingIconVariants}
@@ -194,7 +194,7 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 h-8 sm:h-16 md:h-32 bg-gradient-to-t from-background-alt to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-4 sm:h-16 md:h-32 bg-gradient-to-t from-background-alt to-transparent" />
     </section>
   );
 }
