@@ -33,7 +33,7 @@ export default function About() {
   const { ref, isInView } = useInView({ threshold: 0.1 });
 
   return (
-    <section id="about" className="relative pt-[200px] pb-20 md:py-28 bg-background-alt">
+    <section id="about" className="relative pt-[320px] pb-20 md:py-28 bg-background-alt">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary-blue/[0.02] to-transparent" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
