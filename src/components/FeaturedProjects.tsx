@@ -39,6 +39,7 @@ const projects = [
       "A dedicated celebrity fan hub featuring exclusive content, updates, and direct engagement with your favorite stars.",
     gradient: "from-amber-600 to-yellow-400",
     emoji: "⭐",
+    link: "https://celeb1.midnightdev.sbs/",
   },
   {
     category: "Analytics",
