@@ -33,12 +33,12 @@ const projects = [
     link: "http://clearpathtalentgroup.com",
   },
   {
-    category: "Education",
-    name: "LearnHub",
+    category: "Celebrity Hub",
+    name: "StarConnect",
     description:
-      "Interactive learning management system with AI-driven personalization and real-time progress tracking.",
+      "A dedicated celebrity fan hub featuring exclusive content, updates, and direct engagement with your favorite stars.",
     gradient: "from-amber-600 to-yellow-400",
-    emoji: "📚",
+    emoji: "⭐",
   },
   {
     category: "Analytics",
