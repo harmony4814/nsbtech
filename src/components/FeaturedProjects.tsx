@@ -30,6 +30,7 @@ const projects = [
       "A modern recruitment platform connecting employers with top talent through smart matching and streamlined hiring workflows.",
     gradient: "from-rose-600 to-orange-400",
     emoji: "💼",
+    link: "http://clearpathtalentgroup.com",
   },
   {
     category: "Education",
