@@ -14,14 +14,7 @@ const projects = [
     emoji: "🛒",
     link: "https://www.pmsoriginal.com",
   },
-  {
-    category: "SaaS",
-    name: "CloudSync Pro",
-    description:
-      "Enterprise-grade cloud collaboration suite featuring end-to-end encryption and seamless team workflows.",
-    gradient: "from-purple-600 to-pink-400",
-    emoji: "☁️",
-  },
+
   {
     category: "Fintech",
     name: "PayStream",
