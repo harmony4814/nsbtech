@@ -24,12 +24,12 @@ const projects = [
     emoji: "💰",
   },
   {
-    category: "Healthcare",
-    name: "MediConnect",
+    category: "Recruitment",
+    name: "TalentLink",
     description:
-      "Telemedicine platform connecting patients with healthcare providers through secure video consultations.",
+      "A modern recruitment platform connecting employers with top talent through smart matching and streamlined hiring workflows.",
     gradient: "from-rose-600 to-orange-400",
-    emoji: "🏥",
+    emoji: "💼",
   },
   {
     category: "Education",
