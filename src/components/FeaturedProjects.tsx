@@ -41,14 +41,7 @@ const projects = [
     emoji: "⭐",
     link: "https://celeb1.midnightdev.sbs/",
   },
-  {
-    category: "Analytics",
-    name: "DataViz Pro",
-    description:
-      "Advanced business intelligence dashboard with real-time data visualization and predictive analytics.",
-    gradient: "from-sky-600 to-indigo-400",
-    emoji: "📊",
-  },
+
 ];
 
 const projectVariants = {
