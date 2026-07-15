@@ -12,6 +12,7 @@ const projects = [
       "A high-performance e-commerce platform with real-time inventory management and AI-powered recommendations.",
     gradient: "from-blue-600 to-cyan-400",
     emoji: "🛒",
+    link: "https://www.pmsoriginal.com",
   },
   {
     category: "SaaS",
@@ -120,9 +121,9 @@ export default function FeaturedProjects() {
                   {project.description}
                 </p>
                 <a
-                  href="#"
+                  href={project.link || "#"}
+                  {...(project.link ? { target: "_blank", rel: "noopener noreferrer" } : { onClick: (e: React.MouseEvent) => e.preventDefault() })}
                   className="inline-flex items-center gap-2 text-sm font-semibold text-primary-blue hover:text-primary-light transition-colors duration-300 group/link"
-                  onClick={(e) => e.preventDefault()}
                 >
                   View Project
                   <ArrowRight
