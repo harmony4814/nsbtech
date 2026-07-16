@@ -9,7 +9,7 @@ const projects = [
     category: "E-Commerce",
     name: "ShopFlow",
     description:
-      "A high-performance e-commerce platform with real-time inventory management and AI-powered recommendations.",
+      "Powerful online stores with seamless checkout experiences that drive conversions and revenue growth.",
     gradient: "from-blue-600 to-cyan-400",
     emoji: "🛒",
     link: "https://www.pmsoriginal.com",
