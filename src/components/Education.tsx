@@ -15,7 +15,7 @@ const educationItems = [
   },
   {
     degree: "Full-Stack Web Development",
-    period: "2023 - 2024",
+    period: "2020 - 2025",
     description:
       "Intensive training in modern web development including React, Node.js, and cloud deployment.",
     highlights: ["Certificate of Completion"],
