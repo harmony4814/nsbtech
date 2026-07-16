@@ -20,14 +20,7 @@ const educationItems = [
       "Intensive training in modern web development including React, Node.js, and cloud deployment.",
     highlights: ["Certificate of Completion"],
   },
-  {
-    degree: "WAEC / Senior Secondary",
-    school: "Olive Royal Academy, Ekiti State",
-    period: "2016",
-    description:
-      "Science track with strong foundations in Mathematics and Physics.",
-    highlights: ["5 Distinctions"],
-  },
+
 ];
 
 const cardVariants = {
